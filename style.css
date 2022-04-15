@@ -41,7 +41,7 @@ nav {
     padding-right: 70px;
 }
 
-a {
+nav > a {
     text-decoration: none;
     color: white;
     padding: 10px;
@@ -53,12 +53,12 @@ a#destaque {
     padding: 10px;
 }
 
-a:hover {
+nav > a:hover, nav > a:focus{
     color: var(--azul);
     transition: 0.3s;
 }
 
-a#destaque:hover {
+a#destaque:hover, a#destaque:focus {
     background-color: var(--azul);
     color: white;
 }
@@ -89,8 +89,9 @@ h2#titulo-destaque {
     color: var(--azul);
 }
 
-p {
+aside > p {
     line-height: 20px;
+    text-align: justify;
 }
 
 form {
@@ -169,12 +170,14 @@ footer > p {
     padding: 8px;
 }
 
-#github {
-    padding: 0;
+footer > p > a {
+    text-decoration: none;
+    color: white;
 }
 
 #github:hover {
     color: rgb(205, 205, 255);
+    text-decoration: underline;
 }
 
 ::-webkit-scrollbar {
