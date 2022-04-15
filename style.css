@@ -175,7 +175,7 @@ footer > p > a {
     color: white;
 }
 
-#github:hover {
+footer > p > a:hover {
     color: rgb(205, 205, 255);
     text-decoration: underline;
 }
