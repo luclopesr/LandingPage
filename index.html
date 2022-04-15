@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div>
+        <div id="title">
             <h1>DevLuc</h1>
             <h1>Cursos</h1>
         </div>
@@ -18,20 +18,21 @@
             <a href="#">Serviços</a>
             <a href="#">Sobre</a>
             <a href="#">Contato</a>
-            <a href="#">Criar uma conta</a>
+            <a href="#" id="destaque">Criar uma conta</a>
         </nav>
     </header>
 
     <main>
         <aside> 
-            <h2>Inscreva-se agora</h2>
-            <h2>na DevLuc</h2>
+            <div id="inscreva-se">
+                <h2 id="titulo-destaque">Inscreva-se agora</h2>
+                <h2>na DevLuc</h2>
+            </div>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sed dolor reiciendis, inventore adipisci odit a, non eum, accusamus sequi consectetur rem hic illum veniam numquam ullam. At, sed eos?</p>
-            <p>Preencha o formulário abaixo</p>
-
+            
             <form>
-
-                <div>
+                <p>Preencha o formulário abaixo</p>
+                <div class="">
                     <input type="text" placeholder="Nome" required>
                     <input type="text" placeholder="Sobrenome" required>
                 </div>
@@ -40,14 +41,14 @@
                     <input type="email" placeholder="Email" required>
                 </div>
                 
-                <div>
+                <div id="aplicacao" class="grupo">
                     <label>De qual lado da aplicação você desenvolve?</label>
                     <label><input type="radio" >Front-end</label>
                     <label><input type="radio">Back-end</label>
                     <label><input type="radio">Fullstack</label>
                 </div>
 
-                <div>
+                <div id="selecionar" class="grupo">
                     <label>Senioridade</label>
                     <select name="senioridade" id="senioridade">
                         <option value="" disabled selected>Selecione</option>
@@ -57,25 +58,27 @@
                     </select>
                 </div>
 
-                <div>
+                <div id="tecnologias" class="grupo">
                     <label>Quais dessas tecnologias você utiliza?</label>
-                    <input type="checkbox" id="html">
-                    <label for="html">HTML</label>
-                    <input type="checkbox" id="css">
-                    <label for="css">CSS</label>
-                    <input type="checkbox" id="javascript">
-                    <label for="javascript">JavaScript</label>
-                    <input type="checkbox" id="python">
-                    <label for="pyc">Python</label>
-                    <input type="checkbox" id="java">
-                    <label for="java">Java</label>
-                    <input type="checkbox" id="c">
-                    <label for="c">C</label>
-                    <input type="checkbox" id="php">
-                    <label for="php">PHP</label>
+                    <div id="opcoes">
+                        <input type="checkbox" id="html">
+                        <label for="html">HTML</label>
+                        <input type="checkbox" id="css">
+                        <label for="css">CSS</label>
+                        <input type="checkbox" id="javascript">
+                        <label for="javascript">JavaScript</label>
+                        <input type="checkbox" id="python">
+                        <label for="pyc">Python</label>
+                        <input type="checkbox" id="java">
+                        <label for="java">Java</label>
+                        <input type="checkbox" id="c">
+                        <label for="c">C</label>
+                        <input type="checkbox" id="php">
+                        <label for="php">PHP</label>
+                    </div>
                 </div>
 
-                <button type="submit">Enviar ></button>
+                <button type="submit" class="grupo">Enviar ></button>
 
             </form>
         </aside>
@@ -84,5 +87,9 @@
             <img src="imagens/meninoGato.png" alt="menino-gato">
         </article>
     </main>
+
+    <footer>
+        <p>Site desenvolvido por <a href="https://github.com/luclopesr" id="github"><strong>Lucas Lopes</strong></a></p>
+    </footer>
 </body>
 </html>
