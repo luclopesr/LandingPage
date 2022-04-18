@@ -13,11 +13,12 @@
     padding: 0;
 }
 
-body {
+html, body {
     background-color: var(--preto);
     color: white;
     font-family: var(--font);
     margin: auto;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -64,7 +65,7 @@ a#destaque:hover, a#destaque:focus {
 }
 
 
-main {
+section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
