@@ -131,6 +131,10 @@ input[type="text"]:focus, input[type="email"]:focus, select:focus {
     flex-direction: column;
 }
 
+label.aplicacao {
+    width: 95px;
+}
+
 select {
     border: none;
     border-radius: 20px;
